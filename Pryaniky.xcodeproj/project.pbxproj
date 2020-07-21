@@ -11,9 +11,13 @@
 		6CB4AC5324C5E043006A9820 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB4AC5224C5E043006A9820 /* SceneDelegate.swift */; };
 		6CB4AC5524C5E043006A9820 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB4AC5424C5E043006A9820 /* ViewController.swift */; };
 		6CB4AC5824C5E043006A9820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB4AC5624C5E043006A9820 /* Main.storyboard */; };
-		6CB4AC5B24C5E043006A9820 /* Pryaniky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6CB4AC5924C5E043006A9820 /* Pryaniky.xcdatamodeld */; };
 		6CB4AC5D24C5E04B006A9820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CB4AC5C24C5E04B006A9820 /* Assets.xcassets */; };
 		6CB4AC6024C5E04B006A9820 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB4AC5E24C5E04B006A9820 /* LaunchScreen.storyboard */; };
+		6CB4AC6824C5E0C4006A9820 /* WebManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB4AC6724C5E0C4006A9820 /* WebManager.swift */; };
+		6CB4AC6A24C5E247006A9820 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB4AC6924C5E247006A9820 /* Model.swift */; };
+		6CB4AC6D24C5E4B4006A9820 /* PryanikCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB4AC6B24C5E4B4006A9820 /* PryanikCell.swift */; };
+		6CB4AC6E24C5E4B4006A9820 /* PryanikCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CB4AC6C24C5E4B4006A9820 /* PryanikCell.xib */; };
+		6CB4AC7424C6155B006A9820 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB4AC7324C6155B006A9820 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +26,14 @@
 		6CB4AC5224C5E043006A9820 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6CB4AC5424C5E043006A9820 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6CB4AC5724C5E043006A9820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6CB4AC5A24C5E043006A9820 /* Pryaniky.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pryaniky.xcdatamodel; sourceTree = "<group>"; };
 		6CB4AC5C24C5E04B006A9820 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CB4AC5F24C5E04B006A9820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CB4AC6124C5E04B006A9820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CB4AC6724C5E0C4006A9820 /* WebManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebManager.swift; sourceTree = "<group>"; };
+		6CB4AC6924C5E247006A9820 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		6CB4AC6B24C5E4B4006A9820 /* PryanikCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PryanikCell.swift; sourceTree = "<group>"; };
+		6CB4AC6C24C5E4B4006A9820 /* PryanikCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PryanikCell.xib; sourceTree = "<group>"; };
+		6CB4AC7324C6155B006A9820 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,76 @@
 		6CB4AC4F24C5E043006A9820 /* Pryaniky */ = {
 			isa = PBXGroup;
 			children = (
-				6CB4AC5024C5E043006A9820 /* AppDelegate.swift */,
-				6CB4AC5224C5E043006A9820 /* SceneDelegate.swift */,
-				6CB4AC5424C5E043006A9820 /* ViewController.swift */,
-				6CB4AC5624C5E043006A9820 /* Main.storyboard */,
-				6CB4AC5C24C5E04B006A9820 /* Assets.xcassets */,
-				6CB4AC5E24C5E04B006A9820 /* LaunchScreen.storyboard */,
-				6CB4AC6124C5E04B006A9820 /* Info.plist */,
-				6CB4AC5924C5E043006A9820 /* Pryaniky.xcdatamodeld */,
+				6CB4AC7224C61530006A9820 /* ViewController */,
+				6CB4AC7024C61520006A9820 /* Service */,
+				6CB4AC7124C6152B006A9820 /* Model */,
+				6CB4AC6F24C5E4B8006A9820 /* View */,
+				6CB4AC7624C62779006A9820 /* Storyboard */,
+				6CB98B0424C768EA000895A1 /* App */,
+				6CB4AC7524C62752006A9820 /* Resources */,
 			);
 			path = Pryaniky;
+			sourceTree = "<group>";
+		};
+		6CB4AC6F24C5E4B8006A9820 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6CB4AC6B24C5E4B4006A9820 /* PryanikCell.swift */,
+				6CB4AC6C24C5E4B4006A9820 /* PryanikCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6CB4AC7024C61520006A9820 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6CB4AC6724C5E0C4006A9820 /* WebManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6CB4AC7124C6152B006A9820 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6CB4AC6924C5E247006A9820 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6CB4AC7224C61530006A9820 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6CB4AC5424C5E043006A9820 /* ViewController.swift */,
+				6CB4AC7324C6155B006A9820 /* DetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6CB4AC7524C62752006A9820 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6CB4AC5C24C5E04B006A9820 /* Assets.xcassets */,
+				6CB4AC6124C5E04B006A9820 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6CB4AC7624C62779006A9820 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				6CB4AC5624C5E043006A9820 /* Main.storyboard */,
+				6CB4AC5E24C5E04B006A9820 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		6CB98B0424C768EA000895A1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6CB4AC5024C5E043006A9820 /* AppDelegate.swift */,
+				6CB4AC5224C5E043006A9820 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +198,7 @@
 			files = (
 				6CB4AC6024C5E04B006A9820 /* LaunchScreen.storyboard in Resources */,
 				6CB4AC5D24C5E04B006A9820 /* Assets.xcassets in Resources */,
+				6CB4AC6E24C5E4B4006A9820 /* PryanikCell.xib in Resources */,
 				6CB4AC5824C5E043006A9820 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,10 +210,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CB4AC5B24C5E043006A9820 /* Pryaniky.xcdatamodeld in Sources */,
+				6CB4AC6D24C5E4B4006A9820 /* PryanikCell.swift in Sources */,
+				6CB4AC6A24C5E247006A9820 /* Model.swift in Sources */,
+				6CB4AC6824C5E0C4006A9820 /* WebManager.swift in Sources */,
 				6CB4AC5524C5E043006A9820 /* ViewController.swift in Sources */,
 				6CB4AC5124C5E043006A9820 /* AppDelegate.swift in Sources */,
 				6CB4AC5324C5E043006A9820 /* SceneDelegate.swift in Sources */,
+				6CB4AC7424C6155B006A9820 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KWAG9NLQG9;
-				INFOPLIST_FILE = Pryaniky/Info.plist;
+				INFOPLIST_FILE = Pryaniky/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +380,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KWAG9NLQG9;
-				INFOPLIST_FILE = Pryaniky/Info.plist;
+				INFOPLIST_FILE = Pryaniky/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,19 +414,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		6CB4AC5924C5E043006A9820 /* Pryaniky.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				6CB4AC5A24C5E043006A9820 /* Pryaniky.xcdatamodel */,
-			);
-			currentVersion = 6CB4AC5A24C5E043006A9820 /* Pryaniky.xcdatamodel */;
-			path = Pryaniky.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 6CB4AC4524C5E043006A9820 /* Project object */;
 }
